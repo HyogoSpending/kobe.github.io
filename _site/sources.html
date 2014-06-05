@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Data Sources - 税金はどこへ行った？</title>
+  <meta name="description" content="あなたの税金がどこで使われているかをお示しします">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!--
+  <script src="http://d3js.org/d3.v2.js"></script>
+  -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <!--[if lt IE 9]><p class=chromeframe>お使いのウェブヴラウザは古いため，当サイトのコンテンツを正常に表示できません．<br><a href="http://browsehappy.com/">最新のウェブブラウザ</a>で閲覧する事をお勧めします．</p><![endif]-->
+      <div id="logo">
+        <a href="/">
+          <img src="img/logo.png" alt="税金はどこへ行った？">
+          <div id="claim">
+            あなたが神戸市に納めた税金がどこで使われているかをお示しします
+          </div>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav nav-tabs">
+          <li><a href="/contact.html">お問い合わせ</a></li>
+          <li><a href="/links.html">関連サイト</a></li>
+          <li><a href="/team.html">開発者</a></li>
+          <li><a href="/sources.html">データの出所</a></li>
+          <li><a href="/about.html">このサイトについて</a></li>
+          <li><a href="/bubbletree.html">使途別予算額</a></li>
+          <!--li><a href="bubbletree-map.html">Country &amp; Regional Analysis</a></li-->
+          <li><a href="/">使途一日あたり</a></li>
+        </ul>
+      </nav>
+      <script type="text/javascript">
+        $(function() {
+          var path = window.location.pathname;
+          $('ul.nav-tabs a').each(function(i,el) {
+            if (path == $(el).attr('href')) {
+              $(el).addClass('active');
+            }
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="page-header">データの出所</h2>
+
+<div class="row">
+  <div class="span8 offset4">
+  <p>データは、神戸市が作成している「平成26年度神戸市各会計予算に関する説明書」に示す一般会計予算の歳出において、一般財源（市税配分・地方交付税等）を充てた款項目を使用しています。</p>
+
+  </div>
+</div>
+
+
+<h2 class="page-header">どのように、可視化に使っているデータの分類を決めているのか？ </h2>
+
+<div class="row">
+  <div class="span8 offset4">
+  可視化に使っているデータの分類は、神戸市行財政局財政部財務課発行の予算パンフレット「平成25年度当初予算の概要 市民とつくる安心と明日の元気な神戸」5頁の「平成25年度 一般会計予算の状況」中の市民サービス分野名を使用し、9種類のデータ・ラベルを設定しています。 </div>
+</div>
+<h2 class="page-header">いつの時点のデータを使っているのか？ </h2>
+
+<div class="row">
+  <div class="span8 offset4">
+  平成26年度神戸市予算のデータを使っています。
+  </div>
+</div>
+
+<h2 class="page-header">このサイト上で税金額はどのように計算されているのですか？</h2>
+
+<div class="row">
+  <div class="span8 offset4">
+自分の年間総収入をスライドで設定し、単身世帯か扶養一人世帯かを選択すると、給与所得者であるという前提で、神戸市に納めている市税年総額と9分野毎に一日当たり支払っている市税額が表示されます。なお、市税額は、給与所得控除および所得控除を考慮して計算しています。
+</div>
+</div>
+
+<!--h2 class="page-header">If these are international categories, can I see spending classified this way for my country?</h2>
+
+<div class="row">
+  <div class="span8 offset4">
+The COFOG categories are international, so yes - it should be possible to compare spending across different countries that make their spending publicly available.
+
+If you know of data published in this way for your country, please email us at <a href="mailto:info@openspending.org">info@openspending.org</a>.
+  </div>
+</div-->
+
+<h2 class="page-header">どのようなデータを使っているのですか？</h2>
+
+<div class="row">
+  <div class="span8 offset4">
+  今回の<strong>Where Does My Money Go?</strong> β版は神戸市が作成している「平成26年度神戸市各会計予算に関する説明書」に示す一般会計予算の歳出において、一般財源（市税配分）を充てた款項目を使用しています。なお、選択すべき款項目や分類データの構造化については、神戸市行財政局財政部財務課と相談の上、決定しました。
+  </div>
+</div>
+
+<h2 class="page-header">私のデータの視覚化をお願いできますか？ </h2>
+
+<div class="row">
+  <div class="span8 offset4">
+  はい、できます。もし、キレイに視覚化したいデータをお持ちであれば、<a href="contact.html">コンタクトフォーム</a>からご連絡下さい。
+  </div>
+</div>
+
+  </div>
+
+  <footer>
+    <div class="inner">
+      <div class="container">
+        <p>
+          Where Does My Money Go? (日本語版 ver.1.0.) は、イギリスの Open Knowledge Foundation が開発した Where Does My Money Go? (英語版) をベースに開発されています。使われているデータは神戸市行財政局財政課が作成している平成26年度一般会計予算のデータをもとにしています。Where Does My Money Go? プロジェクトは、公共データのオープン化を進める有志に支えられています。</p>
+
+        <ul class="footer-links span4 pull-left">
+          <li><a href="http://wheredoesmymoneygo.org">Where Does My Money Go?</a></li>
+          <li><a href="http://openspending.org">OpenSpending</a></li>
+          <li><a href="http://thedatahub.org">TheDataHub</a></li>
+          <li><a href="http://okfnlabs.org">OKFN Labs</a></li>
+          <!--li><a href="http://yourtopia.net">YourTopia</a></li-->
+        </ul>
+        <ul class="footer-links span4 pull-left">
+          <li><a href="team.html">Core team</a></li>
+          <li><a href="sources.html">Data sources</a> used on this site</li>
+          <!--li><a href="http://openspending.org/help/contact.html">Get in touch</a> and contribute</li-->
+          <li><a href="https://github.com/orezeni/orezeni.github.com">Code</a> and making your own</li>
+          <!--li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li-->
+        </ul>
+
+        All <a href="http://creativecommons.org/licenses/by/3.0/">content</a>,
+        <a href="http://www.gnu.org/licenses/agpl.html">code</a>
+        and <a href="http://opendatacommons.org/licenses/odbl/">data</a> is
+        openly licensed in accordance with the
+        <a href="http://opendefinition.org/">open definition</a>.
+        <br/>
+        <a href="http://opendefinition.org"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="Open Content" /></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var _gaq=[['_setAccount','UA-33045557-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
