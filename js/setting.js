@@ -10,6 +10,9 @@ Taxes.taxRate = 0.06; // 住民税率
 
 var OpenSpending = OpenSpending || {};
 
+
+
+
 OpenSpending.identifier = 'kobe_2014_yosan';
 OpenSpending.year = '2014';
 
